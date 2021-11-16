@@ -2,6 +2,7 @@ package com.samuel.microservice.ueb3library.presentation;
 
 import com.samuel.microservice.ueb3library.model.dao.Book;
 import com.samuel.microservice.ueb3library.model.rest.BookRest;
+import com.samuel.microservice.ueb3library.model.rest.ReviewPostRest;
 import com.samuel.microservice.ueb3library.model.rest.ReviewRest;
 import com.samuel.microservice.ueb3library.rest.BookRestImpl;
 import com.samuel.microservice.ueb3library.rest.ReviewPostRestImpl;
@@ -38,7 +39,7 @@ public class ReviewRestcontroller {
 	}
 
 	@PostMapping("")
-	public ResponseEntity<ReviewRest> postReview(@RequestBody ReviewPostRestImpl reviewPostRest){
+	public ResponseEntity<ReviewRest> postReview(@RequestBody ReviewPostRest reviewPostRest){
 		Optional<BookRestImpl> optionalBook = bookService.findBookById(reviewPostRest.getBookId());
 		if(optionalBook.isEmpty()){
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);

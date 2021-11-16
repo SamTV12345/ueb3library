@@ -6,6 +6,7 @@ import com.samuel.microservice.ueb3library.mapper.MapperFacade;
 import com.samuel.microservice.ueb3library.model.dao.Book;
 import com.samuel.microservice.ueb3library.model.dao.Review;
 import com.samuel.microservice.ueb3library.model.rest.BookRest;
+import com.samuel.microservice.ueb3library.model.rest.ReviewPostRest;
 import com.samuel.microservice.ueb3library.model.rest.ReviewRest;
 import com.samuel.microservice.ueb3library.rest.BookRestImpl;
 import lombok.AllArgsConstructor;
@@ -21,7 +22,14 @@ public class ReviewService {
 	private BookDaoJpaImpl bookDaoJpa;
 
 	public ReviewRest saveReview(final ReviewRest reviewRest, final BookRest bookRest){
-		Book book = mapperFacade.mapBookRestToDao(bookRest);
+		final Book book = mapperFacade.mapBookRestToDao(bookRest);
+		final Review savedReview = reviewDaoJpa.saveReview(mapperFacade.mapReviewRestToDao(reviewRest, book));
+		return mapperFacade.mapReviewToRest(savedReview);
+	}
+
+	public ReviewRest saveReview(final ReviewPostRest reviewPostRest, final BookRest bookRest){
+		final ReviewRest reviewRest = mapperFacade.mapReviewToRest(reviewPostRest);
+		final Book book = mapperFacade.mapBookRestToDao(bookRest);
 		final Review savedReview = reviewDaoJpa.saveReview(mapperFacade.mapReviewRestToDao(reviewRest, book));
 		return mapperFacade.mapReviewToRest(savedReview);
 	}

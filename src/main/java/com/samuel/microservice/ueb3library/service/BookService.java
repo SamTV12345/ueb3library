@@ -3,6 +3,7 @@ package com.samuel.microservice.ueb3library.service;
 import com.samuel.microservice.ueb3library.dao.impl.BookDaoJpaImpl;
 import com.samuel.microservice.ueb3library.mapper.MapperFacade;
 import com.samuel.microservice.ueb3library.model.dao.Book;
+import com.samuel.microservice.ueb3library.model.rest.BookPostRest;
 import com.samuel.microservice.ueb3library.model.rest.BookRest;
 import com.samuel.microservice.ueb3library.rest.BookRestImpl;
 import lombok.AllArgsConstructor;
@@ -17,6 +18,12 @@ public class BookService {
 	private MapperFacade mapperFacade;
 
 	public BookRest saveBook(final BookRest bookRest){
+		Book savedBook = bookDaoJpa.saveBook(mapperFacade.mapBookRestToDao(bookRest));
+		return mapperFacade.mapBookToRest(savedBook);
+	}
+
+	public BookRest saveBook(final BookPostRest bookPostRest){
+		final BookRest bookRest = mapperFacade.mapBookToRest(bookPostRest);
 		Book savedBook = bookDaoJpa.saveBook(mapperFacade.mapBookRestToDao(bookRest));
 		return mapperFacade.mapBookToRest(savedBook);
 	}

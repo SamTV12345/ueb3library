@@ -4,6 +4,7 @@ import com.samuel.microservice.ueb3library.mapper.interfaces.BookMapper;
 import com.samuel.microservice.ueb3library.mapper.interfaces.ReviewMapper;
 import com.samuel.microservice.ueb3library.model.dao.Book;
 import com.samuel.microservice.ueb3library.model.rest.BookRest;
+import com.samuel.microservice.ueb3library.model.rest.ReviewPostRest;
 import com.samuel.microservice.ueb3library.model.rest.ReviewRest;
 import com.samuel.microservice.ueb3library.rest.ReviewRestImpl;
 import com.samuel.microservice.ueb3library.dao.model.ReviewDaoImpl;
@@ -21,6 +22,14 @@ public class ReviewMapperImpl implements ReviewMapper {
 				review.getText(),
 				review.getScore(),
 				review.getBook().getId());
+	}
+
+	@Override
+	public ReviewRest mapToRest(final ReviewPostRest reviewPostRest){
+		return new ReviewRestImpl(0,
+				reviewPostRest.getText(),
+				reviewPostRest.getScore(),
+				reviewPostRest.getBookId());
 	}
 
 	@Override
