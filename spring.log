@@ -804,3 +804,98 @@ com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct 
 2021-11-16 21:12:24.871  INFO 23864 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-11-16 21:12:24.871  INFO 23864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-11-16 21:12:24.872  INFO 23864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-11-16 21:14:44.817  INFO 23864 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-16 21:14:44.820  INFO 23864 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-16 21:14:44.832  INFO 23864 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-16 21:14:44.899  INFO 23864 --- [restartedMain] c.s.m.u.Ueb3libraryApplication           : Starting Ueb3libraryApplication using Java 17 on Samuel with PID 23864 (C:\Users\samue\OneDrive - Hochschule für Technik und Wirtschaft des Saarlandes\HTW\Semester_5\Microservices\Übung3\ueb3library\target\classes started by samue in C:\Users\samue\OneDrive - Hochschule für Technik und Wirtschaft des Saarlandes\HTW\Semester_5\Microservices\Übung3\ueb3library)
+2021-11-16 21:14:44.899  INFO 23864 --- [restartedMain] c.s.m.u.Ueb3libraryApplication           : No active profile set, falling back to default profiles: default
+2021-11-16 21:14:45.078  INFO 23864 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-16 21:14:45.079  INFO 23864 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2021-11-16 21:14:45.166  INFO 23864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-16 21:14:45.167  INFO 23864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-16 21:14:45.167  INFO 23864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-16 21:14:45.186  INFO 23864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-16 21:14:45.187  INFO 23864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 286 ms
+2021-11-16 21:14:45.216  INFO 23864 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-16 21:14:45.221  INFO 23864 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-11-16 21:14:45.225  INFO 23864 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-11-16 21:14:45.225  INFO 23864 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-11-16 21:14:45.242  INFO 23864 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-16 21:14:45.242  INFO 23864 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-16 21:14:45.277  WARN 23864 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-16 21:14:45.563  INFO 23864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-16 21:14:45.574  INFO 23864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-16 21:14:45.578  INFO 23864 --- [restartedMain] c.s.m.u.Ueb3libraryApplication           : Started Ueb3libraryApplication in 0.709 seconds (JVM running for 414.483)
+2021-11-16 21:14:45.579  INFO 23864 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-11-16 21:17:51.408  INFO 23864 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-16 21:17:51.409  INFO 23864 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-11-16 21:17:51.414  INFO 23864 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-11-16 21:17:51.493  INFO 23864 --- [restartedMain] c.s.m.u.Ueb3libraryApplication           : Starting Ueb3libraryApplication using Java 17 on Samuel with PID 23864 (C:\Users\samue\OneDrive - Hochschule für Technik und Wirtschaft des Saarlandes\HTW\Semester_5\Microservices\Übung3\ueb3library\target\classes started by samue in C:\Users\samue\OneDrive - Hochschule für Technik und Wirtschaft des Saarlandes\HTW\Semester_5\Microservices\Übung3\ueb3library)
+2021-11-16 21:17:51.493  INFO 23864 --- [restartedMain] c.s.m.u.Ueb3libraryApplication           : No active profile set, falling back to default profiles: default
+2021-11-16 21:17:51.669  INFO 23864 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-16 21:17:51.694  INFO 23864 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2021-11-16 21:17:51.779  INFO 23864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-16 21:17:51.779  INFO 23864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-16 21:17:51.779  INFO 23864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-16 21:17:51.798  INFO 23864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-16 21:17:51.798  INFO 23864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 303 ms
+2021-11-16 21:17:51.831  INFO 23864 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-16 21:17:51.836  INFO 23864 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-11-16 21:17:51.840  INFO 23864 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-11-16 21:17:51.840  INFO 23864 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-11-16 21:17:51.885  INFO 23864 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-16 21:17:51.885  INFO 23864 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-16 21:17:51.998  WARN 23864 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-16 21:17:52.276  INFO 23864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-16 21:17:52.287  INFO 23864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-16 21:17:52.292  INFO 23864 --- [restartedMain] c.s.m.u.Ueb3libraryApplication           : Started Ueb3libraryApplication in 0.824 seconds (JVM running for 601.197)
+2021-11-16 21:17:52.293  INFO 23864 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-11-16 21:18:06.837  INFO 23864 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-16 21:18:06.838  INFO 23864 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2021-11-16 21:18:06.852  INFO 23864 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2021-11-16 21:18:06.940  INFO 23864 --- [restartedMain] c.s.m.u.Ueb3libraryApplication           : Starting Ueb3libraryApplication using Java 17 on Samuel with PID 23864 (C:\Users\samue\OneDrive - Hochschule für Technik und Wirtschaft des Saarlandes\HTW\Semester_5\Microservices\Übung3\ueb3library\target\classes started by samue in C:\Users\samue\OneDrive - Hochschule für Technik und Wirtschaft des Saarlandes\HTW\Semester_5\Microservices\Übung3\ueb3library)
+2021-11-16 21:18:06.941  INFO 23864 --- [restartedMain] c.s.m.u.Ueb3libraryApplication           : No active profile set, falling back to default profiles: default
+2021-11-16 21:18:07.134  INFO 23864 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-16 21:18:07.135  INFO 23864 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2021-11-16 21:18:07.273  INFO 23864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-16 21:18:07.274  INFO 23864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-16 21:18:07.275  INFO 23864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-16 21:18:07.306  INFO 23864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-16 21:18:07.307  INFO 23864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 363 ms
+2021-11-16 21:18:07.356  INFO 23864 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-16 21:18:07.364  INFO 23864 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2021-11-16 21:18:07.374  INFO 23864 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2021-11-16 21:18:07.374  INFO 23864 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-11-16 21:18:07.405  INFO 23864 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-16 21:18:07.406  INFO 23864 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-16 21:18:07.462  WARN 23864 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-16 21:18:07.897  INFO 23864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-16 21:18:07.907  INFO 23864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-16 21:18:07.911  INFO 23864 --- [restartedMain] c.s.m.u.Ueb3libraryApplication           : Started Ueb3libraryApplication in 1.013 seconds (JVM running for 616.816)
+2021-11-16 21:18:07.912  INFO 23864 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-11-16 21:18:10.364  INFO 23864 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-16 21:18:10.367  INFO 23864 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2021-11-16 21:18:10.399  INFO 23864 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2021-11-16 21:18:10.555  INFO 23864 --- [restartedMain] c.s.m.u.Ueb3libraryApplication           : Starting Ueb3libraryApplication using Java 17 on Samuel with PID 23864 (C:\Users\samue\OneDrive - Hochschule für Technik und Wirtschaft des Saarlandes\HTW\Semester_5\Microservices\Übung3\ueb3library\target\classes started by samue in C:\Users\samue\OneDrive - Hochschule für Technik und Wirtschaft des Saarlandes\HTW\Semester_5\Microservices\Übung3\ueb3library)
+2021-11-16 21:18:10.556  INFO 23864 --- [restartedMain] c.s.m.u.Ueb3libraryApplication           : No active profile set, falling back to default profiles: default
+2021-11-16 21:18:10.949  INFO 23864 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-16 21:18:11.002  INFO 23864 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2021-11-16 21:18:11.256  INFO 23864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-16 21:18:11.257  INFO 23864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-16 21:18:11.258  INFO 23864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-16 21:18:11.302  INFO 23864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-16 21:18:11.303  INFO 23864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 744 ms
+2021-11-16 21:18:11.377  INFO 23864 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-16 21:18:11.385  INFO 23864 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2021-11-16 21:18:11.395  INFO 23864 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2021-11-16 21:18:11.396  INFO 23864 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-11-16 21:18:11.449  INFO 23864 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-16 21:18:11.450  INFO 23864 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-16 21:18:11.593  WARN 23864 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-16 21:18:11.962  INFO 23864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-16 21:18:11.977  INFO 23864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-16 21:18:11.982  INFO 23864 --- [restartedMain] c.s.m.u.Ueb3libraryApplication           : Started Ueb3libraryApplication in 1.488 seconds (JVM running for 620.888)
+2021-11-16 21:18:11.984  INFO 23864 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-11-16 21:18:40.024  INFO 23864 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-16 21:18:40.024  INFO 23864 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2021-11-16 21:18:40.032  INFO 23864 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
