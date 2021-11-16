@@ -46,6 +46,22 @@ public class ReviewRestcontroller {
 		return new ResponseEntity<>(reviewService.saveReview(reviewPostRest, optionalBook.get()), HttpStatus.OK);
 	}
 
+	@GetMapping("/{reviewId}")
+	public ResponseEntity<ReviewRest>  getReviewOfBook(@PathVariable(value = "id") int bookId, @PathVariable(value = "reviewId") int reviewId){
+		Optional<BookRestImpl> optionalBook = bookService.findBookById(bookId);
+		if(optionalBook.isEmpty()){
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+		}
+		else{
+			Optional<ReviewRest> optionalFoundReview = reviewService.findReviewByBookAndId(optionalBook.get(), reviewId);
+			if(optionalFoundReview.isEmpty()){
+				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+			}
+			return new ResponseEntity<>(optionalFoundReview.get(), HttpStatus.OK);
+		}
+
+	}
+
 
 }
 

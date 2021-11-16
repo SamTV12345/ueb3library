@@ -32,4 +32,14 @@ public class ReviewDaoJpaImpl {
 	public List<Review> findAllReviewsByBook(final Book book) {
 		return new ArrayList<>(reviewRepository.findAllByBook(book));
 	}
+
+	public Optional<Review> findReviewByBookAndReviewId(final Book book, final int id){
+
+		Optional<ReviewDaoImpl> optionalReview = reviewRepository.findByBookAndId(book, id);
+
+		if(optionalReview.isEmpty()){
+			return Optional.empty();
+		}
+		return Optional.of(optionalReview.get());
+	}
 }

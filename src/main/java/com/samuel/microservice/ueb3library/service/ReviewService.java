@@ -26,18 +26,21 @@ public class ReviewService {
 		return mapperFacade.mapReviewToRest(savedReview);
 	}
 
-	public ReviewRest findReviewById(final int id){
-		Optional<Review> optional =  reviewDaoJpa.findReview(id);
-		if(optional.isEmpty()){
-			throw new RuntimeException("Review nicht gefunden");
-		}
-		else{
-			return mapperFacade.mapReviewToRest(optional.get());
-		}
-	}
-
 	public List<ReviewRest> findAllReviewsByBook(final BookRestImpl book) {
 		List<Review> listOfReviewsOfBook = reviewDaoJpa.findAllReviewsByBook(mapperFacade.mapBookRestToDao(book));
 		return listOfReviewsOfBook.stream().map(mapperFacade::mapReviewToRest).collect(Collectors.toList());
+	}
+
+	public Optional<ReviewRest> findReviewByBookAndId(final BookRestImpl book, final int reviewId){
+		final Book bookRest = mapperFacade.mapBookRestToDao(book);
+		Optional<Review> optionalReview =  reviewDaoJpa.findReviewByBookAndReviewId(bookRest, reviewId);
+		if(optionalReview.isEmpty()){
+			return Optional.empty();
+		}
+		else{
+			ReviewRest mappedReviewToRest = mapperFacade.mapReviewToRest(optionalReview.get());
+			return Optional.of(mappedReviewToRest);
+		}
+
 	}
 }
