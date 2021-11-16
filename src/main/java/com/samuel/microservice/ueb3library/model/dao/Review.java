@@ -4,7 +4,7 @@ public interface Review {
 
 	String getText();
 
-	String getScore();
+	int getScore();
 
 	int getId();
 

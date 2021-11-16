@@ -61,6 +61,33 @@
 	<build>
 		<plugins>
 			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>3.1.4</version>
+				<configuration>
+					<from>
+						<image>openjdk:17</image>
+					</from>
+					<container>
+						<ports>
+							<port>8080</port>
+						</ports>
+						<format>OCI</format>
+						<environment>
+							<SPRING_DATASOURCE_URL>your_url</SPRING_DATASOURCE_URL>
+							<SPRING_DATASOURCE_USERNAME>your_user</SPRING_DATASOURCE_USERNAME>
+							<SPRING_DATASOURCE_PASSWORD>your_password</SPRING_DATASOURCE_PASSWORD>
+						</environment>
+					</container>
+					<to>
+						<image>registry.hub.docker.com/samuel19982/library-rest-controller</image>
+						<tags>
+							<tag>latest</tag>
+						</tags>
+					</to>
+				</configuration>
+			</plugin>
+			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>

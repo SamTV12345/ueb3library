@@ -20,7 +20,7 @@ public class ReviewMapperImpl implements ReviewMapper {
 		return new ReviewRestImpl(
 				review.getId(),
 				review.getText(),
-				review.getScore(),
+				String.valueOf(review.getScore()),
 				review.getBook().getId());
 	}
 
@@ -35,11 +35,16 @@ public class ReviewMapperImpl implements ReviewMapper {
 	@Override
 	public Review mapToDao(final ReviewRest reviewRest, final Book book) {
 		if(reviewRest instanceof ReviewRestImpl reviewRestWithId) {
-			return new ReviewDaoImpl(reviewRestWithId.getId(), reviewRest.getText(), reviewRest.getScore(),
+			return new ReviewDaoImpl(reviewRestWithId.getId(),
+					reviewRest.getText(),
+					Integer.parseInt(reviewRest.getScore()),
 					book);
 		}
 		else{
-			return new ReviewDaoImpl(0, reviewRest.getText(), reviewRest.getScore(), book);
+			return new ReviewDaoImpl(0,
+					reviewRest.getText(),
+					Integer.parseInt(reviewRest.getScore()),
+					book);
 		}
 	}
 }

@@ -15,7 +15,6 @@ public class ServiceConfiguration {
 	@Bean
 	@Autowired
 	public BookService bookService(final BookDaoJpaImpl bookDaoJpa, final MapperFacade mapperFacade){
-		System.out.println(mapperFacade);
 		return new BookService(bookDaoJpa,mapperFacade);
 	}
 
