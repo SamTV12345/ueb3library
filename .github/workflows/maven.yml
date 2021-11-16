@@ -19,3 +19,9 @@ jobs:
       run: mvn clean package --file pom.xml
     - name: Publish docker image
       run: mvn jib:build
+    - name: Remove all running containers
+      run: for container in $(docker ps -aq); do  docker rm -f $container; done
+    - name: Recompile for internal use
+      run: mvn clean compile jib:dockerBuild
+    - name: Run container locally
+      run: docker  run -e SPRING_DATASOURCE_URL=jdbc:mysql://192.168.1.35/library -e SPRING_DATASOURCE_USERNAME=root -e SPRING_DATASOURCE_PASSWORD=mypass -p 80:8080 -d registry.hub.docker.com/samuel19982/library-rest-controller
