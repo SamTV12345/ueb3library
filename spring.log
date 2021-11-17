@@ -53,3 +53,26 @@
 2021-11-17 16:58:04.153  INFO 41136 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-11-17 16:58:04.156  INFO 41136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-11-17 16:58:04.168  INFO 41136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-17 17:09:32.399  INFO 56272 --- [restartedMain] c.s.m.u.Ueb3libraryApplication           : Starting Ueb3libraryApplication using Java 17 on Samuel with PID 56272 (C:\Users\samue\OneDrive - Hochschule für Technik und Wirtschaft des Saarlandes\HTW\Semester_5\Microservices\Übung3\ueb3library\target\classes started by samue in C:\Users\samue\OneDrive - Hochschule für Technik und Wirtschaft des Saarlandes\HTW\Semester_5\Microservices\Übung3\ueb3library)
+2021-11-17 17:09:32.400  INFO 56272 --- [restartedMain] c.s.m.u.Ueb3libraryApplication           : No active profile set, falling back to default profiles: default
+2021-11-17 17:09:32.447  INFO 56272 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-17 17:09:32.448  INFO 56272 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-17 17:09:33.144  INFO 56272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-17 17:09:33.210  INFO 56272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2021-11-17 17:09:33.777  INFO 56272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-17 17:09:33.785  INFO 56272 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-17 17:09:33.785  INFO 56272 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-17 17:09:33.872  INFO 56272 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-17 17:09:33.873  INFO 56272 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1424 ms
+2021-11-17 17:09:34.015  INFO 56272 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-17 17:09:34.051  INFO 56272 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-17 17:09:34.142  INFO 56272 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-17 17:09:34.217  INFO 56272 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-17 17:09:34.259  INFO 56272 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-17 17:09:34.276  INFO 56272 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2021-11-17 17:09:34.714  INFO 56272 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-17 17:09:34.721  INFO 56272 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-17 17:09:35.118  WARN 56272 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-17 17:09:35.776  INFO 56272 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-17 17:09:35.832  INFO 56272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-17 17:09:35.844  INFO 56272 --- [restartedMain] c.s.m.u.Ueb3libraryApplication           : Started Ueb3libraryApplication in 3.803 seconds (JVM running for 4.599)

@@ -80,7 +80,7 @@ public class BookRestcontroller {
     }
 
     @ApiResponses(value = {@ApiResponse(responseCode = "200", content = @Content(mediaType = "application/json",
-            schema = @Schema(implementation = BookPostRest.class))),
+            schema = @Schema(implementation = BookPostRestImpl.class))),
             @ApiResponse(responseCode = "400", description = "Missing or invalid request body")})
     @PutMapping("/{id}")
     public ResponseEntity<BookRest> putBook(@RequestBody BookPostRestImpl bookRestPost,
