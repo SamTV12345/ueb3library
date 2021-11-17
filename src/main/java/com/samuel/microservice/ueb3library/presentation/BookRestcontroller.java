@@ -66,7 +66,7 @@ public class BookRestcontroller {
     }
 
     @ApiResponses(value = {@ApiResponse(responseCode = "200", content = @Content(mediaType = "application/json",
-            schema = @Schema(implementation = BookRest.class))),
+            schema = @Schema(implementation = BookPostRestImpl.class))),
             @ApiResponse(responseCode = "400", description = "Missing or invalid request body",
                     content = @Content(mediaType = "application/json"))})
     @PostMapping("")
