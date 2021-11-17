@@ -19,7 +19,6 @@ public class DaoConfiguration {
 
 	@Bean
 	public BookDaoJpaImpl bookDaoJpa(){
-		System.out.println("Das ist die neue Version mit Docker");
 		return new BookDaoJpaImpl(bookRepository);
 	}
 

@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Ueb3libraryApplication {
 
 	public static void main(String[] args) {
+		System.out.println("Das ist die neue Version mit Docker");
 		SpringApplication.run(Ueb3libraryApplication.class, args);
 	}
 
