@@ -15,10 +15,8 @@ jobs:
     runs-on: [self-hosted, linux, x64]
 
     steps:
-    - name: Build with Maven
-      run: mvn clean package --file pom.xml
     - name: Publish docker image
-      run: mvn jib:build
+      run: mvn clean compile jib:build
     - name: Remove all running containers
       run: for container in $(docker ps -aq); do  docker rm -f $container; done
     - name: Recompile for internal use
