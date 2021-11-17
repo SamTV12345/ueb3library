@@ -12,7 +12,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @Getter
 @Setter
-public class BookRestPostImpl implements BookPostRest {
+public class BookPostRestImpl implements BookPostRest {
 	@JsonProperty("title")
 	private String title;
 	@JsonProperty("author")

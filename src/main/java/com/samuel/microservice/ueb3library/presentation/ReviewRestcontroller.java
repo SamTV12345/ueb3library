@@ -53,7 +53,7 @@ public class ReviewRestcontroller {
 			@ApiResponse(responseCode = "404", description = "When the book is not found",
 					content = @Content(mediaType = "application/json"))})
 	@PostMapping("")
-	public ResponseEntity<ReviewRest> postReview(@RequestBody ReviewPostRest reviewPostRest){
+	public ResponseEntity<ReviewRest> postReview(@RequestBody ReviewPostRestImpl reviewPostRest){
 		Optional<BookRestImpl> optionalBook = bookService.findBookById(reviewPostRest.getBookId());
 		if(optionalBook.isEmpty()){
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);

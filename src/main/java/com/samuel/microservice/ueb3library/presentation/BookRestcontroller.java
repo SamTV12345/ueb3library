@@ -3,9 +3,8 @@ package com.samuel.microservice.ueb3library.presentation;
 import com.samuel.microservice.ueb3library.model.rest.BookPostRest;
 import com.samuel.microservice.ueb3library.model.rest.BookRest;
 import com.samuel.microservice.ueb3library.rest.BookRestImpl;
-import com.samuel.microservice.ueb3library.rest.BookRestPostImpl;
+import com.samuel.microservice.ueb3library.rest.BookPostRestImpl;
 import com.samuel.microservice.ueb3library.service.BookService;
-import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.media.ArraySchema;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -71,7 +70,7 @@ public class BookRestcontroller {
             @ApiResponse(responseCode = "400", description = "Missing or invalid request body",
                     content = @Content(mediaType = "application/json"))})
     @PostMapping("")
-    public ResponseEntity<BookRest> postBook(@RequestBody BookPostRest bookRestPost) {
+    public ResponseEntity<BookRest> postBook(@RequestBody BookPostRestImpl bookRestPost) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             return new ResponseEntity<>(bookService.saveBook(bookRestPost), HttpStatus.OK);
@@ -84,7 +83,7 @@ public class BookRestcontroller {
             schema = @Schema(implementation = BookPostRest.class))),
             @ApiResponse(responseCode = "400", description = "Missing or invalid request body")})
     @PutMapping("/{id}")
-    public ResponseEntity<BookRest> putBook(@RequestBody BookPostRest bookRestPost,
+    public ResponseEntity<BookRest> putBook(@RequestBody BookPostRestImpl bookRestPost,
                                             @PathVariable(value = "id") int idToBeFound) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
